@@ -3,6 +3,7 @@
           package="com.nebulaera.view">
 
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/hi"
@@ -15,6 +16,8 @@
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
+        </activity>
+        <activity android:name=".ChangeableCharActivity">
         </activity>
     </application>
 
