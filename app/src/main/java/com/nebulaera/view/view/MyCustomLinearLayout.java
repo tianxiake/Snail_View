@@ -37,6 +37,7 @@ public class MyCustomLinearLayout extends ViewGroup {
         for (int i = 0; i < childCount; i++) {
             View childAt = getChildAt(i);
             measureChild(childAt, widthMeasureSpec, heightMeasureSpec);
+            childAt.getLayoutParams();
             int childHeight = childAt.getMeasuredHeight();
             int childWidth = childAt.getMeasuredWidth();
             Log.i(LYJ_TAG, "[childHeight:{" + childHeight + "}] [childWidth:{" + childWidth + "}]");
@@ -64,5 +65,15 @@ public class MyCustomLinearLayout extends ViewGroup {
             childAt.layout(0, top, w, top + h);
             top += h;
         }
+    }
+
+    @Override
+    public LayoutParams generateLayoutParams(AttributeSet attrs) {
+        return new MarginLayoutParams(getContext(), attrs);
+    }
+
+    @Override
+    protected LayoutParams generateLayoutParams(LayoutParams p) {
+        return new MarginLayoutParams(p);
     }
 }
