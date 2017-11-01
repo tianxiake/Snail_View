@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
@@ -13,6 +14,11 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     private static final String LYJ_TAG = "LYJ_MainActivity";
     private Button changeableCharBtn;
+    private Button bounceCircleBtn;
+    private Button rotateAndColorChangeBtn;
+    private Button keyFrameBtn;
+    private Button menuBtn;
+    private Button wifiStrengthIndicatorBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +26,25 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
         changeableCharBtn = (Button) findViewById(R.id.btn_changeable_char);
         changeableCharBtn.setOnClickListener(this);
+
+        bounceCircleBtn = (Button) findViewById(R.id.btn_bounce_circle);
+        bounceCircleBtn.setOnClickListener(this);
+
+        rotateAndColorChangeBtn = (Button) findViewById(R.id.btn_rotate_and_color_change);
+        rotateAndColorChangeBtn.setOnClickListener(this);
+
+        keyFrameBtn = (Button) findViewById(R.id.btn_key_frame);
+        keyFrameBtn.setOnClickListener(this);
+
+        menuBtn = (Button) findViewById(R.id.btn_menu);
+        menuBtn.setOnClickListener(this);
+
+        wifiStrengthIndicatorBtn = (Button) findViewById(R.id.btn_wifi_strength_indicator);
+        wifiStrengthIndicatorBtn.setOnClickListener(this);
+
+        int a = 0x3;
+        int b = a << 30;
+        Log.v(LYJ_TAG, "[b:{" + b + "}]");
     }
 
     @Override
@@ -27,6 +52,21 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch (v.getId()) {
             case R.id.btn_changeable_char:
                 startInsideActivity(ChangeableCharActivity.class);
+                break;
+            case R.id.btn_bounce_circle:
+                startInsideActivity(BounceCircleActivity.class);
+                break;
+            case R.id.btn_rotate_and_color_change:
+                startInsideActivity(RotateAndColorChangeActivity.class);
+                break;
+            case R.id.btn_key_frame:
+                startInsideActivity(KeyFrameActivity.class);
+                break;
+            case R.id.btn_menu:
+                startInsideActivity(MenuActivity.class);
+                break;
+            case R.id.btn_wifi_strength_indicator:
+                startInsideActivity(WifiStrengthActivity.class);
                 break;
             default:
                 break;

@@ -11,13 +11,30 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN"/>-->
+
+                <!--<category android:name="android.intent.category.LAUNCHER"/>-->
+            <!--</intent-filter>-->
+        </activity>
+        <activity android:name=".ChangeableCharActivity">
+        </activity>
+        <activity android:name=".BounceCircleActivity">
+        </activity>
+        <activity android:name=".RotateAndColorChangeActivity">
+        </activity>
+        <activity android:name=".KeyFrameActivity">
+        </activity>
+        <activity android:name=".MenuActivity">
+        </activity>
+        <activity android:name=".WifiStrengthActivity">
+        </activity>
+        <activity android:name=".LayoutActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
-        </activity>
-        <activity android:name=".ChangeableCharActivity">
         </activity>
     </application>
 

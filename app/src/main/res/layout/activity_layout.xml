@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.nebulaera.view.view.MyCustomLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffaabd"
+    tools:context="com.nebulaera.view.LayoutActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hi World"
+        android:textSize="12sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hi Android"
+        android:textSize="12sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hi Future"
+        android:textSize="12sp"/>
+
+</com.nebulaera.view.view.MyCustomLinearLayout>

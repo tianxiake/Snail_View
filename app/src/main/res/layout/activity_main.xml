@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.nebulaera.view.MainActivity">
 
     <Button
@@ -11,4 +12,37 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="变化的字母"/>
+
+    <Button
+        android:id="@+id/btn_bounce_circle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="弹跳圆"/>
+
+    <Button
+        android:id="@+id/btn_rotate_and_color_change"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="旋转和颜色"/>
+
+    <Button
+        android:id="@+id/btn_key_frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="KeyFrame"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btn_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Menu"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btn_wifi_strength_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Wifi Indicator"
+        android:textAllCaps="false"/>
 </LinearLayout>
