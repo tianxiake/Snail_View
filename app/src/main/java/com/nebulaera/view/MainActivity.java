@@ -2,11 +2,13 @@ package com.nebulaera.view;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.drawable.Animatable;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
 /**
  * @author Barry 2017/10/19
@@ -19,6 +21,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button keyFrameBtn;
     private Button menuBtn;
     private Button wifiStrengthIndicatorBtn;
+    private ImageView circleImageView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +45,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         wifiStrengthIndicatorBtn = (Button) findViewById(R.id.btn_wifi_strength_indicator);
         wifiStrengthIndicatorBtn.setOnClickListener(this);
 
+        circleImageView = (ImageView) findViewById(R.id.circleImageView);
+        circleImageView.setOnClickListener(this);
         int a = 0x3;
         int b = a << 30;
         Log.v(LYJ_TAG, "[b:{" + b + "}]");
@@ -67,6 +72,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btn_wifi_strength_indicator:
                 startInsideActivity(WifiStrengthActivity.class);
+                break;
+            case R.id.circleImageView:
+                Animatable drawable = (Animatable) circleImageView.getDrawable();
+                drawable.start();
                 break;
             default:
                 break;

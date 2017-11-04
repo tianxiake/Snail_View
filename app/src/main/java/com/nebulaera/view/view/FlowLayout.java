@@ -5,7 +5,6 @@ import android.util.AttributeSet;
 import android.view.View;
 import android.view.ViewGroup;
 
-import static android.R.attr.width;
 
 /**
  * @author Barry 2017/11/1
@@ -33,7 +32,7 @@ public class FlowLayout extends ViewGroup {
 
         //当前控件测量的高度
         int measureHeight = MeasureSpec.getSize(heightMeasureSpec);
-        int measureHeightMode = MeasureSpec.getMode(heightMeasureSpec);
+//        int   = MeasureSpec.getMode(heightMeasureSpec);
 
         int lineWidth = 0;
         int lineHeight = 0;
@@ -53,14 +52,14 @@ public class FlowLayout extends ViewGroup {
             lineWidth = childMeasureWidth + leftMargin + rightMargin;
             if (lineWidth > measureWidth) {
 
-            }else{
+            } else {
 
             }
 
 
         }
 
-        setMeasuredDimension(measureWidth, measureHeightMode == MeasureSpec.EXACTLY ? measureHeight : 0);
+//        setMeasuredDimension(measureWidth, measureHeightMode == MeasureSpec.EXACTLY ? measureHeight : 0);
     }
 
     @Override
@@ -74,10 +73,8 @@ public class FlowLayout extends ViewGroup {
             MarginLayoutParams layoutParams = (MarginLayoutParams) childAt.getLayoutParams();
             int leftMargin = layoutParams.leftMargin;
             int rightMargin = layoutParams.rightMargin;
-            int left = leftMargin + measuredWidth * i
             maxWidth += leftMargin + rightMargin + measuredWidth;
-            if (maxWidth <= width) {
-//                childAt.layout();
+            if (maxWidth <= 0) {
             } else {
             }
         }
