@@ -11,29 +11,31 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
-
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".ChangeableCharActivity">
+        <activity android:name=".activity.ChangeableCharActivity">
         </activity>
-        <activity android:name=".BounceCircleActivity">
+        <activity android:name=".activity.BounceCircleActivity">
         </activity>
-        <activity android:name=".RotateAndColorChangeActivity">
+        <activity android:name=".activity.RotateAndColorChangeActivity">
         </activity>
-        <activity android:name=".KeyFrameActivity">
+        <activity android:name=".activity.KeyFrameActivity">
         </activity>
-        <activity android:name=".MenuActivity">
+        <activity android:name=".activity.MenuActivity">
         </activity>
-        <activity android:name=".WifiStrengthActivity">
+        <activity android:name=".activity.WifiStrengthActivity">
         </activity>
-        <activity android:name=".LayoutActivity">
+        <activity android:name=".activity.LayoutActivity">
         </activity>
-        <activity android:name=".FlowActivity">
+        <activity android:name=".activity.FlowActivity">
+        </activity>
+        <activity android:name=".activity.FingerTrackActivity">
+        </activity>
+        <activity android:name=".activity.WaterRippleActivity">
         </activity>
     </application>
 

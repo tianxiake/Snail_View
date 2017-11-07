@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="#ffeeaa"
-    tools:context="com.nebulaera.view.FlowActivity">
+    tools:context="com.nebulaera.view.activity.FlowActivity">
 
     <TextView
         android:layout_width="wrap_content"

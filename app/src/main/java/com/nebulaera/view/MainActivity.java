@@ -2,13 +2,19 @@ package com.nebulaera.view;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.graphics.drawable.Animatable;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageView;
+
+import com.nebulaera.view.activity.BounceCircleActivity;
+import com.nebulaera.view.activity.ChangeableCharActivity;
+import com.nebulaera.view.activity.FingerTrackActivity;
+import com.nebulaera.view.activity.KeyFrameActivity;
+import com.nebulaera.view.activity.MenuActivity;
+import com.nebulaera.view.activity.RotateAndColorChangeActivity;
+import com.nebulaera.view.activity.WaterRippleActivity;
+import com.nebulaera.view.activity.WifiStrengthActivity;
 
 /**
  * @author Barry 2017/10/19
@@ -21,7 +27,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button keyFrameBtn;
     private Button menuBtn;
     private Button wifiStrengthIndicatorBtn;
-    private ImageView circleImageView;
+    private Button fingerTrackBtn;
+    private Button waterRippleBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,11 +52,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         wifiStrengthIndicatorBtn = (Button) findViewById(R.id.btn_wifi_strength_indicator);
         wifiStrengthIndicatorBtn.setOnClickListener(this);
 
-        circleImageView = (ImageView) findViewById(R.id.circleImageView);
-        circleImageView.setOnClickListener(this);
-        int a = 0x3;
-        int b = a << 30;
-        Log.v(LYJ_TAG, "[b:{" + b + "}]");
+        fingerTrackBtn = (Button) findViewById(R.id.btn_finger_track);
+        fingerTrackBtn.setOnClickListener(this);
+
+        waterRippleBtn = (Button) findViewById(R.id.btn_water_ripple);
+        waterRippleBtn.setOnClickListener(this);
     }
 
     @Override
@@ -73,9 +80,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btn_wifi_strength_indicator:
                 startInsideActivity(WifiStrengthActivity.class);
                 break;
-            case R.id.circleImageView:
-                Animatable drawable = (Animatable) circleImageView.getDrawable();
-                drawable.start();
+            case R.id.btn_finger_track:
+                startInsideActivity(FingerTrackActivity.class);
+                break;
+            case R.id.btn_water_ripple:
+                startInsideActivity(WaterRippleActivity.class);
                 break;
             default:
                 break;

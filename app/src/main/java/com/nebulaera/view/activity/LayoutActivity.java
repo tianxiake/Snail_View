@@ -1,7 +1,9 @@
-package com.nebulaera.view;
+package com.nebulaera.view.activity;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+
+import com.nebulaera.view.R;
 
 public class LayoutActivity extends AppCompatActivity {
 

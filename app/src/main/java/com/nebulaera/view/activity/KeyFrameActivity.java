@@ -1,4 +1,4 @@
-package com.nebulaera.view;
+package com.nebulaera.view.activity;
 
 import android.animation.Keyframe;
 import android.animation.ObjectAnimator;
@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.animation.LinearInterpolator;
 import android.widget.ImageView;
+
+import com.nebulaera.view.R;
 
 public class KeyFrameActivity extends AppCompatActivity {
 

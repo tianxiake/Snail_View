@@ -1,7 +1,9 @@
-package com.nebulaera.view;
+package com.nebulaera.view.activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.nebulaera.view.R;
 
 public class BounceCircleActivity extends AppCompatActivity {
 

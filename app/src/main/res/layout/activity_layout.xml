@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="#ffffaabd"
-    tools:context="com.nebulaera.view.LayoutActivity">
+    tools:context="com.nebulaera.view.activity.LayoutActivity">
 
     <TextView
         android:layout_width="match_parent"

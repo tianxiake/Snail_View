@@ -1,4 +1,4 @@
-package com.nebulaera.view;
+package com.nebulaera.view.activity;
 
 import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
@@ -9,6 +9,8 @@ import android.view.View;
 import android.view.animation.BounceInterpolator;
 import android.widget.Button;
 import android.widget.Toast;
+
+import com.nebulaera.view.R;
 
 public class MenuActivity extends AppCompatActivity implements View.OnClickListener {
     private static final String LYJ_TAG = "LYJ_MenuActivity";

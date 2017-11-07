@@ -1,4 +1,4 @@
-package com.nebulaera.view;
+package com.nebulaera.view.activity;
 
 import android.animation.ArgbEvaluator;
 import android.animation.PropertyValuesHolder;
@@ -11,6 +11,8 @@ import android.view.View;
 import android.view.animation.LinearInterpolator;
 import android.widget.Button;
 import android.widget.TextView;
+
+import com.nebulaera.view.R;
 
 public class RotateAndColorChangeActivity extends AppCompatActivity {
     private static final String LYJ_TAG = "LYJ_ChangeActivity";

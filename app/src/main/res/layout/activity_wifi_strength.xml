@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.nebulaera.view.WifiStrengthActivity">
+    tools:context="com.nebulaera.view.activity.WifiStrengthActivity">
 
     <com.nebulaera.view.view.WifiStrengthIndicator
         android:layout_width="200dp"

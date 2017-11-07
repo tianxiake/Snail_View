@@ -1,4 +1,4 @@
-package com.nebulaera.view;
+package com.nebulaera.view.activity;
 
 import android.animation.TypeEvaluator;
 import android.animation.ValueAnimator;
@@ -8,6 +8,8 @@ import android.view.View;
 import android.view.animation.AccelerateDecelerateInterpolator;
 import android.widget.Button;
 import android.widget.TextView;
+
+import com.nebulaera.view.R;
 
 public class ChangeableCharActivity extends AppCompatActivity {
 
