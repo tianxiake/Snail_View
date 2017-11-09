@@ -7,57 +7,96 @@
     android:orientation="vertical"
     tools:context="com.nebulaera.view.MainActivity">
 
-    <Button
-        android:id="@+id/btn_changeable_char"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="变化的字母"/>
+        android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/btn_bounce_circle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="弹跳圆"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-    <Button
-        android:id="@+id/btn_rotate_and_color_change"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="旋转和颜色"/>
+            <Button
+                android:id="@+id/btn_changeable_char"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="变化的字母"/>
 
-    <Button
-        android:id="@+id/btn_key_frame"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="KeyFrame"
-        android:textAllCaps="false"/>
+            <Button
+                android:id="@+id/btn_bounce_circle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="弹跳圆"/>
 
-    <Button
-        android:id="@+id/btn_menu"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Menu"
-        android:textAllCaps="false"/>
+            <Button
+                android:id="@+id/btn_rotate_and_color_change"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="旋转和颜色"/>
 
-    <Button
-        android:id="@+id/btn_wifi_strength_indicator"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Wifi Indicator"
-        android:textAllCaps="false"/>
+            <Button
+                android:id="@+id/btn_key_frame"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="KeyFrame"
+                android:textAllCaps="false"/>
 
-    <Button
-        android:id="@+id/btn_finger_track"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="手指轨迹"
-        android:textAllCaps="false"/>
+            <Button
+                android:id="@+id/btn_menu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Menu"
+                android:textAllCaps="false"/>
 
-    <Button
-        android:id="@+id/btn_water_ripple"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="水波纹效果"
-        android:textAllCaps="false"/>
+            <Button
+                android:id="@+id/btn_wifi_strength_indicator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Wifi Indicator"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/btn_finger_track"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="手指轨迹"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/btn_water_ripple"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="水波纹效果"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/btn_random_draw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="随意绘制"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/btn_xfermode_scratch_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Xfermode妙用 刮刮卡"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/btn_zone_wave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="区域波纹效果"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/btn_layer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="图层概念"
+                android:textAllCaps="false"/>
+        </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>

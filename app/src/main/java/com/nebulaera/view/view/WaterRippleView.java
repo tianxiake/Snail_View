@@ -10,7 +10,7 @@ import android.graphics.Path;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.View;
-import android.view.animation.LinearInterpolator;
+import android.view.animation.AccelerateDecelerateInterpolator;
 
 /**
  * @author Barry 2017/11/7
@@ -23,7 +23,7 @@ public class WaterRippleView extends View {
     /**
      * 定义一个波长的长度
      */
-    private int waterRipperLength = 400;
+    private int waterRipperLength = 600;
     private int originY = 300;
     /**
      * 偏移量
@@ -50,12 +50,13 @@ public class WaterRippleView extends View {
         path = new Path();
 
         PropertyValuesHolder offsetX = PropertyValuesHolder.ofInt("dx", 0, waterRipperLength);
-        PropertyValuesHolder offsetY = PropertyValuesHolder.ofInt("dy", 0, 200);
+        PropertyValuesHolder offsetY = PropertyValuesHolder.ofInt("dy", 0, 1000);
         valueAnimator = ValueAnimator.ofPropertyValuesHolder(offsetX, offsetY);
 //        valueAnimator = ValueAnimator.ofInt(0, waterRipperLength);
-        valueAnimator.setDuration(500);
-        valueAnimator.setInterpolator(new LinearInterpolator());
+        valueAnimator.setDuration(1500);
+        valueAnimator.setInterpolator(new AccelerateDecelerateInterpolator());
         valueAnimator.setRepeatCount(ValueAnimator.INFINITE);
+        valueAnimator.setRepeatMode(ValueAnimator.REVERSE);
         valueAnimator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
             @Override
             public void onAnimationUpdate(ValueAnimator animation) {

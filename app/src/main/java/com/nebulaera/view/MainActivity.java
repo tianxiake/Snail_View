@@ -11,10 +11,14 @@ import com.nebulaera.view.activity.BounceCircleActivity;
 import com.nebulaera.view.activity.ChangeableCharActivity;
 import com.nebulaera.view.activity.FingerTrackActivity;
 import com.nebulaera.view.activity.KeyFrameActivity;
+import com.nebulaera.view.activity.LayerActivity;
 import com.nebulaera.view.activity.MenuActivity;
+import com.nebulaera.view.activity.RandomDrawActivity;
 import com.nebulaera.view.activity.RotateAndColorChangeActivity;
 import com.nebulaera.view.activity.WaterRippleActivity;
 import com.nebulaera.view.activity.WifiStrengthActivity;
+import com.nebulaera.view.activity.XfermodeScratchCardActivity;
+import com.nebulaera.view.activity.ZoneWaveActivity;
 
 /**
  * @author Barry 2017/10/19
@@ -29,6 +33,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button wifiStrengthIndicatorBtn;
     private Button fingerTrackBtn;
     private Button waterRippleBtn;
+    private Button randomDrawBtn;
+    private Button scratchCardBtn;
+    private Button zoneWaveBtn;
+    private Button layerBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,6 +65,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         waterRippleBtn = (Button) findViewById(R.id.btn_water_ripple);
         waterRippleBtn.setOnClickListener(this);
+
+        randomDrawBtn = (Button) findViewById(R.id.btn_random_draw);
+        randomDrawBtn.setOnClickListener(this);
+
+        scratchCardBtn = (Button) findViewById(R.id.btn_xfermode_scratch_card);
+        scratchCardBtn.setOnClickListener(this);
+
+        zoneWaveBtn = (Button) findViewById(R.id.btn_zone_wave);
+        zoneWaveBtn.setOnClickListener(this);
+
+        layerBtn = (Button) findViewById(R.id.btn_layer);
+        layerBtn.setOnClickListener(this);
     }
 
     @Override
@@ -85,6 +105,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btn_water_ripple:
                 startInsideActivity(WaterRippleActivity.class);
+                break;
+            case R.id.btn_random_draw:
+                startInsideActivity(RandomDrawActivity.class);
+                break;
+            case R.id.btn_xfermode_scratch_card:
+                startInsideActivity(XfermodeScratchCardActivity.class);
+                break;
+            case R.id.btn_zone_wave:
+                startInsideActivity(ZoneWaveActivity.class);
+                break;
+            case R.id.btn_layer:
+                startInsideActivity(LayerActivity.class);
                 break;
             default:
                 break;

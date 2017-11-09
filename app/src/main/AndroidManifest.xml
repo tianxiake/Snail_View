@@ -37,6 +37,14 @@
         </activity>
         <activity android:name=".activity.WaterRippleActivity">
         </activity>
+        <activity android:name=".activity.RandomDrawActivity">
+        </activity>
+        <activity android:name=".activity.XfermodeScratchCardActivity">
+        </activity>
+        <activity android:name=".activity.ZoneWaveActivity">
+        </activity>
+        <activity android:name=".activity.LayerActivity">
+        </activity>
     </application>
 
 </manifest>
